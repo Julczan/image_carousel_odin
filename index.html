@@ -7,34 +7,41 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <svg
-      class="previous"
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 24 24"
-    >
-      <path
-        d="M14.383 7.076a1 1 0 0 0-1.09.217l-4 4a1 1 0 0 0 0 1.414l4 4A1 1 0 0 0 15 16V8a1 1 0 0 0-.617-.924z"
-        style="fill: #ff8e31"
-        data-name="Left"
-      />
-    </svg>
-
-    <div class="frame">
-      <div id="slider" class="slider-start">
-        <img id="first" src="/assets/first.jpg" alt="chair" />
-        <img id="second" src="/assets/second.jpg" alt="mountain" />
-        <img id="third" src="/assets/third.jpg" alt="chair" />
-        <img id="last" src="/assets/last.jpg" alt="street" />
+    <div class="display">
+      <svg
+        class="previous"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M14.383 7.076a1 1 0 0 0-1.09.217l-4 4a1 1 0 0 0 0 1.414l4 4A1 1 0 0 0 15 16V8a1 1 0 0 0-.617-.924z"
+          style="fill: #ff8e31"
+          data-name="Left"
+        />
+      </svg>
+      <div class="frame">
+        <div id="slider" class="slider-start">
+          <img id="first" src="/assets/first.jpg" alt="chair" />
+          <img id="second" src="/assets/second.jpg" alt="mountain" />
+          <img id="third" src="/assets/third.jpg" alt="chair" />
+          <img id="last" src="/assets/last.jpg" alt="street" />
+        </div>
       </div>
+      <svg class="next" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <path
+          d="m14.707 11.293-4-4A1 1 0 0 0 9 8v8a1 1 0 0 0 1.707.707l4-4a1 1 0 0 0 0-1.414z"
+          style="fill: #ff8e31"
+          data-name="Right"
+        />
+      </svg>
     </div>
 
-    <svg class="next" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-      <path
-        d="m14.707 11.293-4-4A1 1 0 0 0 9 8v8a1 1 0 0 0 1.707.707l4-4a1 1 0 0 0 0-1.414z"
-        style="fill: #ff8e31"
-        data-name="Right"
-      />
-    </svg>
+    <div class="navigation">
+      <button id="btn-first" class="navigation-btn"></button>
+      <button id="btn-second" class="navigation-btn"></button>
+      <button id="btn-third" class="navigation-btn"></button>
+      <button id="btn-last" class="navigation-btn"></button>
+    </div>
 
     <script src="script.js"></script>
   </body>
