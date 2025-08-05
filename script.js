@@ -5,6 +5,7 @@ const startBtn = document.querySelector("#btn-start");
 const secondBtn = document.querySelector("#btn-second");
 const thirdBtn = document.querySelector("#btn-third");
 const lastBtn = document.querySelector("#btn-last");
+const btnContainer = document.querySelector(".navigation");
 
 function sliderPosition() {
   const setStart = () => {
@@ -67,6 +68,8 @@ function previous() {
       break;
   }
 }
+
+setInterval(next, 5000);
 
 startBtn.addEventListener("click", () => position.setStart());
 secondBtn.addEventListener("click", () => position.setSecond());
