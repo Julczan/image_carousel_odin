@@ -12,7 +12,7 @@ body {
 .slider-third,
 .slider-last {
   width: 1600px;
-  height: 400px;
+  height: 600px;
   border: solid red 2px;
   position: absolute;
 }
@@ -27,10 +27,15 @@ body {
   right: 0px;
 }
 
+#slider {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
 .frame {
   position: relative;
   width: 400px;
-  height: 400px;
+  height: 600px;
   border: solid yellow 2px;
   overflow: hidden;
 }
@@ -38,4 +43,9 @@ body {
 svg {
   width: 60px;
   height: 60px;
+}
+
+img {
+  width: 400px;
+  height: 600px;
 }
