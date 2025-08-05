@@ -69,3 +69,9 @@ img {
   width: 20px;
   border-radius: 50px;
 }
+
+.navigation-btn-active {
+  height: 40px;
+  width: 40px;
+  border-radius: 50px;
+}
